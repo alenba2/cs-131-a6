@@ -1,0 +1,74 @@
+Script started on 2022-12-06 21:21:57-05:00
+kallen@sjsu:~\[allen@sjsu ~]$ mkdir a5[K6.1[K[K_1
+kallen@sjsu:~\[allen@sjsu ~]$ m[Kcd a[Ka6_1
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ awk [K[K[K[Kgrep reipl[K[K[Kplied_to Orig_Tweets2NoBot.tsv > Orig_Tweets2NoBot_replied_to.tsv 
+grep: Orig_Tweets2NoBot.tsv: No such file or directory
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ grep replied_to Orig_Tweets2NoBot.tsv > Orig_Tweets2NoBot_replied_to.tsv [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@.[1@/[1P[1P[1@.[1@.[1@/
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ grep replied_to ../Orig_Tweets2NoBot.tsv > Orig_Tweets2NoBot_replied_to.tsv [C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[16@Tweets2NoBot.tsv[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ O[Kcat Orig_Tweets2NoBot_replied_to.tsv Tweets2NoBot_replied_to.tsv > re[K[Kreplied_to.tsv
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ awk -F""\"t"[C ''{'}'p}'r}'i}'n}'t}' }'$}'6}'[C[C replied_to.tsv | sort |  uniq -c | sort -nr -k 1 |[K > Users.tsv[Kv_.tsvr.tsve.tsvp.tsvl.tsvi.tsve.tsvd.tsv
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ aw[K[Kawk -F"" "[C ''{'}' }'i}'f}' }')}'_}'[1P}'[1P}'(}')}' )}'[Cs)}'[1P)}'#)}'1)}'[1P)}'[1P)}'$)}'1)}' )}'>)}'=)}' )}'3)}'[C }'p}'r}'i}'n}'t}' }'#}'[1P}'$}'1}',}'$}'2}' }'[C[C Users_replied.tsv > In[K[KInfluencers_replied.tsv
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ wc -l Influencers_replied.tsv
+465 Influencers_replied.tsv
+{
+Q1
+
+}
+
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ wk -F" " '{ if ( $1 >= 3) print $1,$2 }' Users_replied.tsv > Influencers_replied.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@a[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[1@{[1@}[1@E[1@N[1@D[1@s[1@u[1@m[1@+[1@=[1@ [1P[1@$[1@`[C[1P[1@1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1@s[1@u[1@m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+7759
+{
+
+Q2
+
+}
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ awk '{print $3}' *NOBOTS.tsv | sort | uniq -c | sort -nr -k 1 | head[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1@r[1@e[1@p[1@l[1@i[1@e[1@d[1@_[1@t[1@o
+    227 2022-03-04
+    165 2022-02-23
+    141 2022-02-04
+    137 2022-04-08
+    137 2022-02-18
+    127 2022-04-23
+    126 2022-03-25
+    120 2022-03-11
+    106 2022-04-02
+     97 2022-04-29
+
+{
+
+Q4
+
+}
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ sed 's/ /\n/g' Reply_text.tsv > 1.tsv
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ sed 's/ /\n/g' Reply_text.tsv > 1.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat 3.tsv | sort |  uniq -c | sort -nr -k 1 | head -10[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Psed 's/.//g' 2.tsv > 3.tsv"//g' 1.tsv > 2.tsv
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ cat 2.tsv |sort |  uniq -c | sort -nr -k 1 | head -10 [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ 
+   6786 
+   3969 the
+   3370 to
+   3186 a
+   2066 of
+   1980 is
+   1818 and
+   1686 in
+   1389 for
+   1179 &amp;
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ cat 2.tsv | sort |  uniq -c | sort -nr -k 1 | head -10 [C[C[1P 1 
+   6786 
+   3969 the
+   3370 to
+   3186 a
+   2066 of
+   1980 is
+   1818 and
+   1686 in
+   1389 for
+   1179 &amp;
+   1142 you
+
+{
+Q5
+}
+
+kallen@sjsu:~/a6_1\[allen@sjsu a6_1]$ exit
+
+Script done on 2022-12-06 22:10:37-05:00
